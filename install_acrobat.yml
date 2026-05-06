@@ -1,0 +1,8 @@
+- name: Install Adobe Reader
+  hosts: windows
+  tasks:
+
+    - name: Install Adobe Acrobat Reader
+      win_chocolatey:
+        name: adobereader
+        state: present
