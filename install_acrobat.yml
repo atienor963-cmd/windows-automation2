@@ -2,7 +2,8 @@
   hosts: windows
   tasks:
 
-    - name: Install Adobe Acrobat Reader
+    - name: Install Adobe Acrobat Reader (forced)
       win_chocolatey:
         name: adobereader
         state: present
+        force: yes
